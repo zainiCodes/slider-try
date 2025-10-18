@@ -1,0 +1,99 @@
+.slider-container {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.review-text {
+  color: #00a676;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.slider-heading {
+  color: #2979ff;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  line-height: 1.3;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-wrapper-container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.custom-swiper {
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.custom-slide {
+  width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  filter: blur(5px); /* default blur for all slides */
+}
+
+.custom-slide.swiper-slide-active {
+  transform: scale(1.05);
+  filter: blur(0); /* active (center) slide is clear */
+  z-index: 5;
+}
+
+.slide-inner {
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.slide-text {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  font-weight: bold;
+  color: #e91e63;
+}
+
+.explore-btn {
+  background: #2979ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 40px;
+  transition: background 0.3s;
+}
+
+.explore-btn:hover {
+  background: #1565c0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-heading {
+    font-size: 22px;
+  }
+  .custom-slide {
+    width: 250px;
+  }
+}
